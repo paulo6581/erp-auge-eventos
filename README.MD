@@ -1,7 +1,7 @@
 <h1 align="center">ERP Auge Eventos</h1>
 
 ## About:
-<p>API Rest Todolist com integração com PostgreSQL</p>
+<p>API Rest com integração com PostgreSQL</p>
 
 ## 🛠 Tecnologies:
  <ul>
