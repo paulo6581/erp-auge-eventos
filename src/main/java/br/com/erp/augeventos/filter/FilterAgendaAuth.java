@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Base64;
 
 @Component // classe de gerenciamento genérica do Spring
-public class FilterTaskAuth  extends OncePerRequestFilter {
+public class FilterAgendaAuth extends OncePerRequestFilter {
 
     @Autowired
     private IUserRepository userRepository;
@@ -50,6 +50,7 @@ public class FilterTaskAuth  extends OncePerRequestFilter {
                 // Validar Senha
                 var passwordVerify = BCrypt.verifyer().verify(password.toCharArray(), user.getPassword());
                 if(passwordVerify.verified) {
+                    request.setAttribute("idUser", user.getId() );
                     filterChain.doFilter(request, response);
                 } else {
                     response.sendError(401);
