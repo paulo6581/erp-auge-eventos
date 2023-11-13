@@ -1,7 +1,7 @@
-package br.com.paulo.todolist.controller;
+package br.com.erp.augeventos.controller;
 
-import br.com.paulo.todolist.model.TaskModel;
-import br.com.paulo.todolist.model.repository.ITaskRepository;
+import br.com.erp.augeventos.model.TaskModel;
+import br.com.erp.augeventos.model.repository.ITaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

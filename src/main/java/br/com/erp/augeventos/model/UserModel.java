@@ -1,8 +1,7 @@
-package br.com.paulo.todolist.model;
+package br.com.erp.augeventos.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Generated;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;

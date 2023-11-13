@@ -1,7 +1,7 @@
-package br.com.paulo.todolist.filter;
+package br.com.erp.augeventos.filter;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import br.com.paulo.todolist.model.repository.IUserRepository;
+import br.com.erp.augeventos.model.repository.IUserRepository;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

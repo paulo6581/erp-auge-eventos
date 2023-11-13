@@ -1,4 +1,4 @@
-package br.com.paulo.todolist;
+package br.com.erp.augeventos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

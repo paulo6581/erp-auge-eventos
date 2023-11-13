@@ -1,4 +1,4 @@
-package br.com.paulo.todolist.model;
+package br.com.erp.augeventos.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

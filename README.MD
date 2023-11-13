@@ -1,4 +1,4 @@
-<h1 align="center">Todolist</h1>
+<h1 align="center">ERP Auge Eventos</h1>
 
 ## About:
 <p>API Rest Todolist com integração com PostgreSQL</p>

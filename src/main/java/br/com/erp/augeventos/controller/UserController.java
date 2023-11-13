@@ -1,8 +1,8 @@
-package br.com.paulo.todolist.controller;
+package br.com.erp.augeventos.controller;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import br.com.paulo.todolist.model.UserModel;
-import br.com.paulo.todolist.model.repository.IUserRepository;
+import br.com.erp.augeventos.model.UserModel;
+import br.com.erp.augeventos.model.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

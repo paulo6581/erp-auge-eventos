@@ -1,6 +1,6 @@
-package br.com.paulo.todolist.model.repository;
+package br.com.erp.augeventos.model.repository;
 
-import br.com.paulo.todolist.model.UserModel;
+import br.com.erp.augeventos.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
