@@ -1,4 +1,4 @@
-package br.com.paulo.todolist.user;
+package br.com.paulo.todolist.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

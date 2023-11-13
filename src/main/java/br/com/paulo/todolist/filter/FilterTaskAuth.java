@@ -1,17 +1,15 @@
 package br.com.paulo.todolist.filter;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import br.com.paulo.todolist.user.IUserRepository;
+import br.com.paulo.todolist.model.repository.IUserRepository;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.hibernate.annotations.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.Base64;
 
 @Component // classe de gerenciamento genérica do Spring

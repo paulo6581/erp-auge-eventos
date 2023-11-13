@@ -1,4 +1,4 @@
-package br.com.paulo.todolist.task;
+package br.com.paulo.todolist.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -28,5 +28,4 @@ public class TaskModel {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
-
 }
