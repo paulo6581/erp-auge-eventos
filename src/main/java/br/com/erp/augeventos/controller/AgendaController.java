@@ -16,14 +16,14 @@ import java.util.UUID;
 public class AgendaController {
 
     @Autowired
-    private IAgendaRepository taskRepository;
+    private IAgendaRepository agendaRepository;
 
     @PostMapping("/")
     public AgendaModel create(@RequestBody AgendaModel agendaModel, HttpServletRequest request) {
         System.out.println("Chegoou no Controller");
         var idUser = request.getAttribute("idUser");
-        agendaModel.setIdUser((UUID) idUser);
-        return this.taskRepository.save(agendaModel);
+        agendaModel.setIdUser((Integer) idUser);
+        return this.agendaRepository.save(agendaModel);
 
     }
 }

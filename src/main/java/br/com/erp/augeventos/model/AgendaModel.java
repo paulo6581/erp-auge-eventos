@@ -23,5 +23,5 @@ public class AgendaModel {
     private LocalDateTime  datHoraInicial;
     private LocalDateTime  datHoraFinal;
 
-    private UUID idUser;
+    private int idUser;
 }
