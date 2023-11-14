@@ -20,7 +20,6 @@ public class AgendaController {
 
     @PostMapping("/")
     public AgendaModel create(@RequestBody AgendaModel agendaModel, HttpServletRequest request) {
-        System.out.println("Chegoou no Controller");
         var idUser = request.getAttribute("idUser");
         agendaModel.setIdUser((Integer) idUser);
         return this.agendaRepository.save(agendaModel);

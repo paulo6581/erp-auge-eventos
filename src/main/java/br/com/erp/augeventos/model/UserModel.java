@@ -9,16 +9,17 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Table(name ="users", schema ="erp_eventos")
+@Table(name ="usuario", schema ="erp_eventos")
 public class UserModel {
     @Id
-    @GeneratedValue(generator = "UUID")
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idUsuario;
+
+    private String name;
 
     @Column(unique = true)
     private String username;
 
-    private String name;
     private String password;
 
     @CreationTimestamp

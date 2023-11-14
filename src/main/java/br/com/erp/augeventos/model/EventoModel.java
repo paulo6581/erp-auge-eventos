@@ -22,4 +22,12 @@ public class EventoModel {
     private String enderecoEvento;
 
     private float vlrEvento;
+
+    @ManyToOne
+    @JoinColumn(name = "id_agenda")
+    private AgendaModel idAgenda;
+
+    @ManyToOne
+    @JoinColumn(name = "id_pessoa")
+    private PessoaModel idPessoa;
 }
