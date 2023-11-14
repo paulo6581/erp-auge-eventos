@@ -24,4 +24,10 @@ public class UserModel {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+
+    @Column (length = 15)
+    private String telefone;
+
+    @Column (length = 200)
+    private String endereco;
 }
