@@ -1,0 +1,45 @@
+<!-- Inclui a seção 'head' do layoutBase -->
+<head th:replace="~{layoutBase :: head}">
+</head>
+
+<body>
+
+<!-- Inclui a barra de navegação do layoutBase -->
+<div th:replace="~{layoutBase :: navbar}"></div>
+
+<!-- Contêiner principal -->
+<div class="container mb-2">
+
+    <h1>Historico Ajudante</h1>
+
+    <table class="table table-light">
+        <tr class="table-dark">
+            <th></th>
+            <th scope="col">Valor</th>
+            <th scope="col">Data</th>
+            <th scope="col">Observacao</th>
+            <th scope="col">NumeroEvento</th>
+            <th scope="col"></th>
+        </tr>
+        <!-- Loop através dos Historico Ajudante e exibição de cada linha na tabela -->
+        <tr th:each="IHistoricoAjudante : ${HistoricosAjudante}">
+            <th scope="row"></th>
+            <td><span th:text="${IHistoricoAjudante.Valor}"></span></td>
+            <td><span th:text="${IHistoricoAjudante.Data}"></span></td>
+            <td><span th:text="${IHistoricoAjudante.Observacao}"></td>
+            <td>R$<span th:text="${IHistoricoAjudante.NumeroEvento}"></span></td>
+            <td class="buttons ">
+                <!-- Botões para editar e excluir cada Historico Ajudante -->
+                <a th:href="@{form/{id}(id=${IHistoricoAjudante.idHistoricoAjudante})}"
+                                    th:method="get" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                <a th:href="@{delete/{idHistoricoAjudante}(idHistoricoAjudante=${IHistoricoAjudante.idHistoricoAjudante})}" th:method="delete"
+                   class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+        </tr>
+    </table>
+    <!-- Botão para adicionar um novo Historico Ajudante -->
+    <a href="/form"><button class="btn btn-dark">Adicionar
+        HistoricoAjudante</button></a>
+</div>
+</body>
+
+</html>
