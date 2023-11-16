@@ -28,6 +28,6 @@ public class EventoModel {
     private AgendaModel idAgenda;
 
     @ManyToOne
-    @JoinColumn(name = "id_pessoa")
-    private PessoaModel idPessoa;
+    @JoinColumn(name = "id_usuario")
+    private UserModel idUsuario;
 }
