@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Histórico de Ajudante</title>
+    <link rel="stylesheet" href="/src/main/css/estilo.css"/>
+   
+</head>
+
+<body>
+    <h1>Cadastro de Histórico de Ajudante</h1>
+
+    <form action="/historicoajudante" method="post">
+        <label for="vlrHistoricoAjudante">Valor do Histórico:</label>
+        <input type="text" id="vlrHistoricoAjudante" name="vlrHistoricoAjudante" required>
+
+        <label for="datHistoricoAjudante">Data do Histórico:</label>
+        <input type="datetime-local" id="datHistoricoAjudante" name="datHistoricoAjudante" required>
+
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao" rows="4" cols="50" required></textarea>
+
+        <label for="nmEvento">Nome do Evento:</label>
+        <input type="text" id="nmEvento" name="nmEvento" required>
+
+        <label for="idAjudante">ID do Ajudante:</label>
+        <input type="text" id="idAjudante" name="idAjudante" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

@@ -3,10 +3,9 @@ package br.com.erp.augeventos.controller;
 import br.com.erp.augeventos.model.EventoModel;
 import br.com.erp.augeventos.model.repository.IEventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller; // Importe a classe correta
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/evento")
@@ -16,9 +15,8 @@ public class EventoController {
     IEventoRepository eventoRepository;
 
     @PostMapping("/")
-    public EventoModel create(@RequestBody EventoModel eventoModel) {
-        System.out.println("Chegoou no Controller");
-
-        return this.eventoRepository.save(eventoModel);
+    public String create(@ModelAttribute EventoModel eventoModel) {
+        eventoRepository.save(eventoModel);
+        return "redirect:/evento/formulario";
     }
 }
